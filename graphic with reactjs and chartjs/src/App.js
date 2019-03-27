@@ -4,15 +4,18 @@ import './App.css';
 import CanvasChart from './components/Chart';
 
 class App extends Component {
-  constructor(){
-    super();
+  constructor(props){
+    super(props);
     this.state = {
       chartData: {},
+      items: []
     };
   }
 
-  componentWillMount(){
-    this.getChartdata(); 
+  componentDidMount() {
+    fetch(`https://github-contributions-api.now.sh/v1/HuguesRomain`)
+      .then(res => res.json())
+      .then(json => this.setState({ items: json }));
   }
 
 getChartdata(){
@@ -45,14 +48,16 @@ getChartdata(){
     }
   })
 }
+
   render() {
+    console.log(this.state.items.contributions)
     return (
       <div className="App">
         <div className="App-header" style={{height: 2}}>
           <img src={logo} className='App-logo' alt="logo" />
           <h2>Welcome to React</h2>
         </div>
-        <CanvasChart chartData={this.state.chartData} location='Massachusetts' legendPosition='bottom' />
+        <CanvasChart chartData={this.state.chartData} style={{width:'20'}} location='Massachusetts' legendPosition='bottom' />
       </div>
     );
   }
