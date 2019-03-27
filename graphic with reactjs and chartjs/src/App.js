@@ -8,7 +8,11 @@ class App extends Component {
     console.log(Date())
     return (
       <div className="App">
-        <CanvasChart  />
+        <div className="App-header" style={{height: 2}}>
+          <img src={logo} className='App-logo' alt="logo" />
+          <h2>Welcome to React</h2>
+        </div>
+        <CanvasChart legendPosition='bottom' />
       </div>
     );
   }

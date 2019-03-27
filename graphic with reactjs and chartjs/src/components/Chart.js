@@ -33,15 +33,27 @@ class CanvasChart extends Component {
     });
   }
 
+  static defaultProps = {
+    displayTitle:true,
+    displayLegend:true,
+    legendPosition:'right',
+  }
+
   render () {
     return (
       <div>
         <Bar
         data={this.state.chartData}
         options={{ 
-           display: true,
+          title:{
+           display: this.props.displayTitle,
            text: 'Largest cities of Massachusetts',
            fontSize: 24,
+          },
+          legend:{
+            display: this.props.displayLegend,
+            position: this.props.legendPosition
+          }
          }}
         />
       </div>
