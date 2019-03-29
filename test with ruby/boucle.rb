@@ -17,9 +17,9 @@
 # end
 
 
-# 6.times do |i|
-#   puts "hello #{i}"
-# end 
+ 6.times do |i|
+  puts "hello #{i}"
+ end 
 
 # i = 0 
 
