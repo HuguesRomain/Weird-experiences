@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../../../../Swift tutorial/Age de chat">
+   </FileRef>
+   <FileRef
       location = "self:Age de chat.xcodeproj">
    </FileRef>
 </Workspace>
