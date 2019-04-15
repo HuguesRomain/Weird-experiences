@@ -5,26 +5,26 @@ CityCards: {
     img: 'NewYork.png'
     },
     elements2: {
-      title: 'New York',
-      img: 'NewYork.png'
+      title: 'Los Angeles',
+      img: 'LosAngeles.png'
     },
     elements3: {
-      title: 'New York',
-      img: 'NewYork.png'
+      title: 'San Francisco',
+      img: 'SanFrancisco.png'
     },
     elements4: {
-      title: 'New York',
-      img: 'NewYork.png'
+      title: 'Chicago',
+      img: 'Chicago.png'
     },
     elements5: {
-      title: 'New York',
-      img: 'NewYork.png'
+      title: 'Philladelphia',
+      img: 'Philladelphia.png'
     },
     elements6: {
-      title: 'New York',
-      img: 'NewYork.png'
+      title: 'Las Vegas',
+      img: 'LasVegas.png'
     },
   },
 };
 
-export default LogBookData;
+export default CityCardsData;
