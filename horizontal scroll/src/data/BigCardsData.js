@@ -24,6 +24,19 @@ CityCards: {
       title: 'Las Vegas',
       img: 'LasVegas.jpg'
     },
+    elements7: {
+      title: 'Seattle',
+      img: 'Seattle.jpg'
+    },
+    elements8: {
+      title: 'Boston',
+      img: 'Boston.jpg'
+    },
+    elements9: {
+      title: 'Dallas',
+      img: 'Dallas.jpg'
+    },
+
   },
 };
 
