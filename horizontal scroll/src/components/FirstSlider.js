@@ -6,12 +6,14 @@ import styled from 'styled-components'
 
 class FirstSlider extends Component {
   state = {
-    CityCards: {CityCardsData}
+    CityCards: {CityCardsData},
   }
+
   render () {
     const CityCards = Object.keys(this.state.CityCards.CityCardsData.CityCards).map(key => <CityCard key={key} detailsCity={this.state.CityCards.CityCardsData.CityCards[key]}></CityCard>)
+
     return (
-      <Slider>
+      <Slider onMouseDown={this.handleMouseDown} onMouseLeave={this.handleMouseLeave} onMouseUp={this.handleMouseUp} onMouseMove={this.handleMouseMove}>
         { CityCards }
       </Slider>
     )
@@ -19,7 +21,7 @@ class FirstSlider extends Component {
 }
 
 const Slider = styled.section`
-  min-width: 100%;
+  min-width: 50%;
   min-height: 200px;
   display: flex;
   overflow-x: auto;

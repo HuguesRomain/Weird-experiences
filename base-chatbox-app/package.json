@@ -1,13 +1,16 @@
 {
-  "name": "horizontal",
+  "name": "chatbox-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-dragscroll": "^2.0.1",
-    "react-scripts": "2.1.8",
-    "styled-components": "^4.2.0"
+    "firebase": "^5.5.1",
+    "prop-types": "^15.6.2",
+    "re-base": "^4.0.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.5",
+    "react-transition-group": "^2.5.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -23,5 +26,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "standard": {
+    "parser": "babel-eslint"
+  }
 }
