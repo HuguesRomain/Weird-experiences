@@ -3,10 +3,11 @@ import React, { Component } from 'react'
 class Formulaire extends Component {
   state = {
     message: '', 
+    length: this.props.length 
   }
 
   createMessage = () => {
-    const {addMessage, pseudo} = this.props
+    const {addMessage, pseudo, length} = this.props
 
     const message = {
       pseudo, 
@@ -14,6 +15,8 @@ class Formulaire extends Component {
     }
 
     addMessage(message)
+
+    this.setState({ message: '', length})
   }
 
   handleSubmit = event => {
@@ -24,8 +27,15 @@ class Formulaire extends Component {
 
   handleChange = event => {
     const message = event.target.value; 
-    this.setState({ message: message })
+    const length = this.props.length - message.length
+    this.setState({ message, length })
     console.log({ message })
+  }
+
+  handleKeyUp = event => {
+    if(event.key === 'Enter'){
+      this.createMessage()
+    }
   }
 
   render () {
@@ -34,10 +44,11 @@ class Formulaire extends Component {
       onSubmit={this.handleSubmit}>
         <textarea
         value={this.state.message}
-        onChange={this.handleChange} 
+        onChange={this.handleChange}
+        onKeyUp={this.handleKeyUp} 
         required 
         maxLength='140'/>
-        <div className='info'>140</div>
+        <div className='info'>{this.state.length}</div>
         <button type='submit'>Envoyer !</button>
       </form>
     )
