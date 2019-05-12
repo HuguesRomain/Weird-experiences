@@ -40,7 +40,7 @@ class Formulaire extends Component {
 
   render () {
     return (
-      <form className='form'
+      <form className='form' 
       onSubmit={this.handleSubmit}>
         <textarea
         value={this.state.message}
