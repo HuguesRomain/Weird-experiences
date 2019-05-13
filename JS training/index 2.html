@@ -25,10 +25,21 @@
             }
         } */
 
-            var div = document.querySelector('ul.board li');
+/*             var div = document.querySelector('ul.board li');
     div.addEventListener('click', function() { 
     console.log('clicked'); 
-    });
+    }); */
+
+    var input = document.querySelector('input');
+    input.addEventListener('keypress', function(event) {
+    if (event.keyCode === 13 && input.value.length > 0) {
+    var ul = document.querySelector('.todos ul');
+    ul.innerHTML = '<li class="item">' + input.value + '</li>';
+    input.value = ''; 
+  }
+});
+
+
     </script>
 
 </html>
