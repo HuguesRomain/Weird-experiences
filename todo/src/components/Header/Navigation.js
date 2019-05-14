@@ -16,13 +16,15 @@ class Navigation extends Component {
   }
 }
 
+const NavigationElement = styled.p`
+  color: ${props => props.theme.textColor};
+  `;
+
 const NavigationElements = styled.div`
-  display: flex; 
+  display: flex;
+  width: 90vw;
   justify-content: space-between;
 `; 
 
-const NavigationElement = styled.p`
-  color: ${props => props.theme.textColor};
-`; 
 
 export default Navigation
