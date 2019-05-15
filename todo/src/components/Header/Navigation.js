@@ -44,10 +44,10 @@ const UiMarker = styled.div`
   height: 1vh; 
   width: 12.1vw;
   margin-top: 0.5vh;
-  transition: 1s;
+  transition: 0.3s;
   background-color: ${props =>(props.active === "veryImportant" ? props.theme.veryImportantColor : props.active === "important" ? props.theme.importantColor : props.active === "normal" ? props.theme.normalColor : props.theme.textColor)};
   border-radius: 50px;
-  transform: translateX(66vw);
+  transform: ${props => (props.active === "veryImportant" ? "translateX(66vw)" : props.active === "important" ? "translateX(30vw)" : props.active === "normal" ? "translateX(2vw)" :  "translateX(66vw)")};
 `;
 
 const NavigationElement = styled.p`
