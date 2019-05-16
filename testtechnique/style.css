@@ -1,0 +1,45 @@
+*{
+  box-sizing: border-box;
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+.cercle{
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background-color: blue;
+}
+
+.cercle__element{
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.square{
+  height: 25px;
+  width: 250px;
+  background-color: blue;
+}
+
+.border-red{
+  border: 2px solid red; 
+}
+
+.carre{
+  border-top: 2px solid blue;
+  display: flex; 
+  height: 20vh ;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.elements{
+  display: flex;
+  flex-direction: column
+}
