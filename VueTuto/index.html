@@ -7,20 +7,10 @@
   <title>Document</title>
 </head>
 <body>
-  <div id="app">
-    <a v-bind:href="link">{{ message }}</a>
-    <div v-if="success">
-      <p>bravo vous avez réussi</p>
-    </div>
-    <div v-else>
-      <p>désolé ça n'a pas marché</p>
-    </div>
-    <ul>
-    <li v-for="name in names">
-      {{ name }}
-    </li>
-  </ul>
+  <div id="App">
+    {{ seconds }}
   </div>
+  <button @click="destroyed">ajouter une personne</button>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
   <script src="./js/app.js"></script>
 </body>
