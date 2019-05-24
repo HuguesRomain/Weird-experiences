@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import styled, {ThemeProvider} from 'styled-components'; 
+import Cards from '../AllCards/Cards'
 import {theme} from '../../assets/theme';
 
 
@@ -34,6 +35,7 @@ class Navigation extends Component {
         activeVeryImportant={"veryImportant" === this.state.Nav}>Very important</NavigationElement>
         </TextNav>
         <UiMarker active={this.state.Nav}></UiMarker>
+        <Cards></Cards>
       </NavigationElements>
     </ThemeProvider>
     )
@@ -47,7 +49,7 @@ const UiMarker = styled.div`
   transition: 0.3s;
   background-color: ${props =>(props.active === "veryImportant" ? props.theme.veryImportantColor : props.active === "important" ? props.theme.importantColor : props.active === "normal" ? props.theme.normalColor : props.theme.textColor)};
   border-radius: 50px;
-  transform: ${props => (props.active === "veryImportant" ? "translateX(66vw)" : props.active === "important" ? "translateX(30vw)" : props.active === "normal" ? "translateX(2vw)" :  "translateX(66vw)")};
+  transform: ${props => (props.active === "veryImportant" ? "translateX(72vw)" : props.active === "important" ? "translateX(35vw)" : props.active === "normal" ? "translateX(7vw)" :  "translateX(66vw)")};
 `;
 
 const NavigationElement = styled.p`
@@ -59,6 +61,7 @@ const TextNav = styled.div`
   display: flex;
   width: 90vw;
   margin-top: 2vh;
+  margin: auto;
   justify-content: space-between;
 `;
 

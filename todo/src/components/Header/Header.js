@@ -9,7 +9,6 @@ class Header extends Component {
     return (
       <HeaderElements>
         <Profile />
-        <Navigation />
       </HeaderElements>
     )
   }
