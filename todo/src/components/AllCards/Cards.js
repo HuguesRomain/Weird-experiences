@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled, {ThemeProvider} from 'styled-components'; 
 import {theme} from '../../assets/theme';
-import Card from './Card'
+import Card from './CardVeryImportant'
 
 class Cards extends Component {
   render () {

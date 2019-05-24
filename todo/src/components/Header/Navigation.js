@@ -35,7 +35,7 @@ class Navigation extends Component {
         activeVeryImportant={"veryImportant" === this.state.Nav}>Very important</NavigationElement>
         </TextNav>
         <UiMarker active={this.state.Nav}></UiMarker>
-        <Cards></Cards>
+        <Cards Nav={this.state.Nav}></Cards>
       </NavigationElements>
     </ThemeProvider>
     )
