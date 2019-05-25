@@ -1,29 +1,29 @@
 import React, { Component } from 'react'
 import styled, {ThemeProvider} from 'styled-components'; 
-import {theme} from '../../assets/theme';
 import TodoVeryImportantCard from './CardVeryImportant'
 import CardsData from '../../data/CardsData';
 
 
-class CardsVery extends Component {
+class CardsVeryImportant extends Component {
   state = {
     CardsDataState: {CardsData},
   }
   render () {
-    const TodoVeryImportantCard = Object.keys(this.state.CardsDataState.CardsVeryImportant).map(key => <TodoVeryImportantCard key={key} detailsTodoVeryImportant={this.state.CardsDataState.CardsVeryImportant[key]}> </TodoVeryImportantCard>)
+    const todoVeryImportantCard = Object.keys(this.state.CardsDataState.CardsData.CardsVeryImportant
+    ).map(key => <TodoVeryImportantCard key={key} detailsCardsVeryImportant={this.state.CardsDataState.CardsData.CardsVeryImportant[key]}></TodoVeryImportantCard>)
     return (
       <FeedCards>
-         {{ TodoVeryImportantCard }}
+         { todoVeryImportantCard }
       </FeedCards>
     )
   }
 }
 
-const FeedCards = styled.div`
+const FeedCards = styled.ul`
   display: flex; 
   flex-direction: column;
   justify-content: center; 
   align-items: center; 
 `;
 
-export default Cards
+export default CardsVeryImportant

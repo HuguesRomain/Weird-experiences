@@ -27,6 +27,7 @@ const ProfileElement = styled.div`
 
 const ProfileName = styled.p`
   color: ${props => props.theme.textColor};
+  margin-top: 3vh;
 `; 
 
 const ProfilePic = styled.img`

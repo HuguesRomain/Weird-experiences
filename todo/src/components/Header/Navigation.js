@@ -55,6 +55,7 @@ const UiMarker = styled.div`
 const NavigationElement = styled.p`
   color: ${props => (props.activeVeryImportant ? props.theme.veryImportantColor : props.activeImportant ? props.theme.importantColor : props.activeNormal ? props.theme.normalColor : props.theme.textColor)};
   margin: 0%;
+  margin-top: 2vh;
   `;
 
 const TextNav = styled.div`
