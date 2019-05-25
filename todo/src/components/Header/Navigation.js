@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styled, {ThemeProvider} from 'styled-components'; 
-import Cards from '../AllCards/Cards'
+import CardsVeryImportant from '../AllCards/CardsVeryImportant'
 import {theme} from '../../assets/theme';
 
 
@@ -35,7 +35,7 @@ class Navigation extends Component {
         activeVeryImportant={"veryImportant" === this.state.Nav}>Very important</NavigationElement>
         </TextNav>
         <UiMarker active={this.state.Nav}></UiMarker>
-        <Cards Nav={this.state.Nav}></Cards>
+        <CardsVeryImportant Nav={this.state.Nav}></CardsVeryImportant>
       </NavigationElements>
     </ThemeProvider>
     )

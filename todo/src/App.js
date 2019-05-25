@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css'; 
 import Header from './components/Header/Header';
 import Navigation from './components/Header/Navigation'
-import Cards from './components/AllCards/Cards';
+
 
 function App() {
   return (

@@ -3,7 +3,7 @@ import styled, {ThemeProvider} from 'styled-components';
 import CardsData from '../../data/CardsData';
 import {theme} from '../../assets/theme';
 
-class Card extends Component {
+class TodoVeryImportantCard extends Component {
   state = {
     TodoData: CardsData,
   }
@@ -12,7 +12,7 @@ class Card extends Component {
     return (
      <ThemeProvider theme={theme}>
       <CardContainer>
-        <TitleTodo>{this.state.TodoData.Card1.title}</TitleTodo>
+        <TitleTodo> {detailsTodoVeryImportant.title} </TitleTodo>
       </CardContainer>
     </ThemeProvider>
     )
@@ -34,4 +34,4 @@ const CardContainer = styled.div`
 `; 
 
 
-export default Card
+export default TodoVeryImportantCard
