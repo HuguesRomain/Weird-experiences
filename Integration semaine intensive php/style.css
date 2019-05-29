@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "Avenir";
+  src: url("./assets/fonts/Avenir-Regular.woff2") format("woff2"),
+        url("./assets/fonts/Avenir-Regular.woff") format("woff");
+ }
+
+html{
+  background-color: #F2F4F8;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  width: 8vw;
+  font-family: Avenir;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 1%;
+}
+
+.img__logo{
+  height: 7vh;
+  padding: 10%;
+}
+
+.login{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 15vw;
+  font-family: Avenir;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 5vh;
+  margin-right: 5vh;
+}
+
+.profil__card{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: #646678;
+  width: 20vw;
+  font-family: Avenir;
+  margin-left: 10vw;
+  padding: 1%;
+  border-radius: 5px;
+}
+
+.pic__name{
+  display: flex;
+  flex-direction: row;
+  width: 22vw;
+}
+
+.profil__pic{
+  height: 40px;
+}
+
+
+.name__country{
+  margin-left: 1vw;
+  margin-top: 0.5vh;
+}
+
+.name{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.country{
+  font-size: 14px;
+  color: #D0D0D0;
+}
+
+.descirption__card{
+  margin-top: 2vh;
+}
+
+.description__title{
+  font-size: 18px;
+  margin-bottom: 1vh;
+  font-weight: bold;
+}
+
+.bestmovie{
+  margin-top: 1vh;
+}
+
+.film__title{
+  margin-bottom: 1vh;
+}
+
+.affiche{
+  height: 15vh;
+  margin-bottom: 1vh;
+}
+
+.movie{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 20vw;
+}
+
+.film__title{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.movie_content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.film_du_moment{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: #646678;
+  width: 20vw;
+  font-family: Avenir;
+  margin-left: 10vw;
+  padding: 1%;
+  border-radius: 5px;
+  margin-top: 5vh;
+}

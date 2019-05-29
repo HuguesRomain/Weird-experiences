@@ -21,7 +21,6 @@ const CardContainer = styled.li`
   width: 80vw;
   margin: 5%;
   border-radius: 10px;
-  opacity: 0.25;
   min-height: 20vh;
   background-color: ${props => (props.theme.redOpacity)};
 `; 
