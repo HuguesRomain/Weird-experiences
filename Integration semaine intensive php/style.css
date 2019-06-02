@@ -29,6 +29,11 @@ header{
   padding: 10%;
 }
 
+.content{
+  display: flex;
+  flex-direction: row;
+}
+
 .login{
   display: flex;
   flex-direction: row;
@@ -48,7 +53,6 @@ header{
   color: #646678;
   width: 20vw;
   font-family: Avenir;
-  margin-left: 10vw;
   padding: 1%;
   border-radius: 5px;
 }
@@ -128,8 +132,59 @@ header{
   color: #646678;
   width: 20vw;
   font-family: Avenir;
-  margin-left: 10vw;
   padding: 1%;
   border-radius: 5px;
-  margin-top: 5vh;
+}
+
+
+.left__column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 75vh;
+  margin-left: 10vw;
+}
+
+.all__post{
+  margin-right: 10vw;
+}
+
+.profil__post{
+  display: flex;
+  flex-direction: column;
+  color: #646678;
+  width: 20vw;
+  font-family: Avenir;
+  padding: 1%;
+  border-radius: 5px;
+} 
+
+.pic__name__post{
+  display: flex;
+  flex-direction: row;
+  width: 22vw;
+}
+
+.profil__pic__post{
+  height: 40px;
+}
+
+.name__country__post{
+  margin-left: 1vw;
+  margin-top: 0.5vh;
+}
+
+.post{
+  background-color: white;
+  border-radius: 5px;
+  color: #646678;
+  padding: 1%;
+  transform: translateY(-616px);
+  margin-left: 35vw;
+  width: 40vw;
+  margin-bottom: 5vh;
+}
+
+.post__text{
+  margin-left: 4.2vw;
 }

@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import styled, {ThemeProvider} from 'styled-components'; 
 import TodoVeryImportantCard from './CardVeryImportant'
-import CardsData from '../../data/CardsData';
+import CardsData from '../../../data/CardsData';
 
 
 class CardsVeryImportant extends Component {
   state = {
     CardsDataState: {CardsData},
+    Nav: this.props.Nav,
   }
   render () {
     const todoVeryImportantCard = Object.keys(this.state.CardsDataState.CardsData.CardsVeryImportant

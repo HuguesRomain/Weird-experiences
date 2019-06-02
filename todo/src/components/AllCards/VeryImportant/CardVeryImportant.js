@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import styled, {ThemeProvider} from 'styled-components'; 
-import CardsData from '../../data/CardsData';
-import {theme} from '../../assets/theme';
+import CardsData from '../../../data/CardsData';
+import {theme} from '../../../assets/theme';
 
 const TodoVeryImportantCard = ({ detailsCardsVeryImportant }) => {
   return (
      <ThemeProvider theme={theme}>
-      <CardContainer>
+      <CardContainerVeryImportant>
         <TitleTodo> {detailsCardsVeryImportant.title} </TitleTodo>
-      </CardContainer>
+      </CardContainerVeryImportant>
     </ThemeProvider>
   )
 }
@@ -17,7 +17,7 @@ const TitleTodo = styled.p`
   color: ${props => (props.theme.textColor)};
 `;
 
-const CardContainer = styled.li`
+const CardContainerVeryImportant = styled.li`
   width: 80vw;
   margin: 5%;
   border-radius: 10px;
