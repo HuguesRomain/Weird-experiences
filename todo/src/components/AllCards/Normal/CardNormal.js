@@ -8,6 +8,7 @@ const TodoNormalCard = ({ detailsCardsNormal }) => {
      <ThemeProvider theme={theme}>
       <CardContainerNormal>
         <TitleTodo> {detailsCardsNormal.title} </TitleTodo>
+        <DescriptionTodo> {detailsCardsNormal.description} </DescriptionTodo>
       </CardContainerNormal>
     </ThemeProvider>
   )
@@ -15,9 +16,19 @@ const TodoNormalCard = ({ detailsCardsNormal }) => {
 
 const TitleTodo = styled.p`
   color: ${props => (props.theme.textColor)};
+  margin: 5%;
+`;
+
+const DescriptionTodo = styled.p`
+  color: ${props => (props.theme.textColor)};
+  margin: 7%;
 `;
 
 const CardContainerNormal = styled.li`
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 80vw;
   margin: 5%;
   border-radius: 10px;
