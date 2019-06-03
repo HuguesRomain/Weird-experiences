@@ -7,6 +7,7 @@ import CardsData from '../../../data/CardsData';
 class CardsImportant extends Component {
   state = {
     CardsDataState: {CardsData},
+    Nav: this.props.Nav,
   }
   render () {
     const todoImportantCard = Object.keys(this.state.CardsDataState.CardsData.CardsImportant

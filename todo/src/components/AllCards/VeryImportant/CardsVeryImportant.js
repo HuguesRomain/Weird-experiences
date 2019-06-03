@@ -9,11 +9,18 @@ class CardsVeryImportant extends Component {
     CardsDataState: {CardsData},
     Nav: this.props.Nav,
   }
+
+  handleClick = () => {
+    const Nav = this.state.Nav
+    console.log("test")
+    this.setState({ Nav })
+  }
+
   render () {
     const todoVeryImportantCard = Object.keys(this.state.CardsDataState.CardsData.CardsVeryImportant
     ).map(key => <TodoVeryImportantCard key={key} detailsCardsVeryImportant={this.state.CardsDataState.CardsData.CardsVeryImportant[key]}></TodoVeryImportantCard>)
     return (
-      <FeedCards Nav={this.state.Nav}>
+      <FeedCards onClick={ this.handleClick } Nav={this.state.Nav}>
          { todoVeryImportantCard }
       </FeedCards>
     )
@@ -21,7 +28,7 @@ class CardsVeryImportant extends Component {
 }
 
 const FeedCards = styled.ul`
-  display: ${props => (props.Nav === "VeryImportant" ? "flex" : "none")};
+  display: ${props => (props.Nav === "veryImportant" ? "flex" : "none")};
   flex-direction: column;
   justify-content: center; 
   align-items: center; 
