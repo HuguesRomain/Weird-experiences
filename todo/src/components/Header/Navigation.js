@@ -3,6 +3,7 @@ import styled, {ThemeProvider} from 'styled-components';
 import CardsVeryImportant from '../AllCards/VeryImportant/CardsVeryImportant'
 import {theme} from '../../assets/theme';
 import CardsImportant from '../AllCards/Important/CardsImportant';
+import CardsNormal from '../AllCards/Normal/CardsNormal';
 
 
 class Navigation extends Component {
@@ -38,6 +39,7 @@ class Navigation extends Component {
         <UiMarker active={this.state.Nav}></UiMarker>
         <CardsVeryImportant Nav={this.state.Nav} />
         <CardsImportant  Nav={this.state.Nav} />
+        <CardsNormal Nav={this.state.Nav}/>
       </NavigationElements>
     </ThemeProvider>
     )
