@@ -7,20 +7,14 @@ import CardsData from '../../../data/CardsData';
 class CardsVeryImportant extends Component {
   state = {
     CardsDataState: {CardsData},
-    Nav: this.props.Nav,
   }
 
-  handleClick = () => {
-    const Nav = this.state.Nav
-    console.log("test")
-    this.setState({ Nav })
-  }
 
   render () {
     const todoVeryImportantCard = Object.keys(this.state.CardsDataState.CardsData.CardsVeryImportant
     ).map(key => <TodoVeryImportantCard key={key} detailsCardsVeryImportant={this.state.CardsDataState.CardsData.CardsVeryImportant[key]}></TodoVeryImportantCard>)
     return (
-      <FeedCards onClick={ this.handleClick } Nav={this.state.Nav}>
+      <FeedCards Nav={this.props.Nav}>
          { todoVeryImportantCard }
       </FeedCards>
     )
