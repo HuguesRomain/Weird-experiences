@@ -25,7 +25,7 @@ const FeedCards = styled.ul`
   display: ${props => (props.Nav === "veryImportant" ? "flex" : "none")};
   flex-direction: column;
   justify-content: center; 
-  align-items: center; 
+  align-items: center;  
 `;
 
 export default CardsVeryImportant

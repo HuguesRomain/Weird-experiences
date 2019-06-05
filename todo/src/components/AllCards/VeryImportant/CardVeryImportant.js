@@ -8,6 +8,7 @@ const TodoVeryImportantCard = ({ detailsCardsVeryImportant }) => {
      <ThemeProvider theme={theme}>
       <CardContainerVeryImportant>
         <TitleTodo> {detailsCardsVeryImportant.title} </TitleTodo>
+        <DescriptionTodo> {detailsCardsVeryImportant.description} </DescriptionTodo>
       </CardContainerVeryImportant>
     </ThemeProvider>
   )
@@ -15,6 +16,12 @@ const TodoVeryImportantCard = ({ detailsCardsVeryImportant }) => {
 
 const TitleTodo = styled.p`
   color: ${props => (props.theme.textColor)};
+  margin: 5%;
+`;
+
+const DescriptionTodo = styled.p`
+  color: ${props => (props.theme.textColor)};
+  margin: 7%;
 `;
 
 const CardContainerVeryImportant = styled.li`
