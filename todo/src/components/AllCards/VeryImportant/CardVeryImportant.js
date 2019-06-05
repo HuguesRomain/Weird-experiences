@@ -25,7 +25,7 @@ const DescriptionTodo = styled.p`
 `;
 
 const CardContainerVeryImportant = styled.li`
-  width: 80vw;
+  width: 90vw;
   margin: 5%;
   border-radius: 10px;
   min-height: 20vh;

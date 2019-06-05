@@ -25,11 +25,7 @@ const DescriptionTodo = styled.p`
 `;
 
 const CardContainerNormal = styled.li`
-  display: flex; 
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 80vw;
+  width: 90vw;
   margin: 5%;
   border-radius: 10px;
   min-height: 20vh;
