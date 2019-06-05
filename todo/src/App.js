@@ -1,22 +1,22 @@
 import React, { Component } from 'react'
 import './assets/reset.css'
-import logo from './logo.svg';
 import './App.css'; 
-import styled, {ThemeProvider} from 'styled-components';
+import styled from 'styled-components';
 import Header from './components/Header/Header';
 import Navigation from './components/Header/Navigation'
-import Plus from '/Users/hugues/Documents/Documents pro/Git Project/Weird-experiences/todo/src/components/AddingTodo/plus.js'
+import Plus from './components/AddingTodo/plus'
 
 
 class App extends Component {
   state = {
     AddTodo: false,
-  }
+  };
+
   handlePlus = () => {
-    if(this.state.AddTodo === false){
-    this.setState({AddTodo: true})
+    if(!this.state.AddTodo){
+    this.setState({ AddTodo: true })
     } else {
-      this.setState({AddTodo: false})
+      this.setState({ AddTodo: false })
     }
   }
 
@@ -26,7 +26,7 @@ class App extends Component {
       <Header></Header>
       <Navigation />
       <BlackBackground AddTodo={this.state.AddTodo}/>
-      <Plus onClick={this.handlePlus}/>
+      <Plus onClick={this.handlePlus} />
       </div>
     );
   }
@@ -34,7 +34,7 @@ class App extends Component {
 
 
 const BlackBackground = styled.div`
-  display: flex;
+  display: ${props => (props.AddTodo ? "flex" : "none")}; 
   position: fixed;
   height: 100vh; 
   width: 100vw;
@@ -42,9 +42,6 @@ const BlackBackground = styled.div`
   opacity: 0.70;
   top: 0;
 `
-
-
-
 
 
 export default App;

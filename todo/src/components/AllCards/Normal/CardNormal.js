@@ -1,6 +1,5 @@
-import React, { Component } from 'react'
+import React from 'react'
 import styled, {ThemeProvider} from 'styled-components'; 
-import CardsData from '../../../data/CardsData';
 import {theme} from '../../../assets/theme';
 
 const TodoNormalCard = ({ detailsCardsNormal }) => {

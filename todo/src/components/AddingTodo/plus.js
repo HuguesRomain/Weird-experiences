@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import styled, {ThemeProvider} from 'styled-components';
-import {theme} from '../../assets/theme';
+import styled from 'styled-components';
+
 
 class Plus extends Component {
   render () {

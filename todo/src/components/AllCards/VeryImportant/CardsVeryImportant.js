@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import styled, {ThemeProvider} from 'styled-components'; 
+import styled from 'styled-components'; 
 import TodoVeryImportantCard from './CardVeryImportant'
 import CardsData from '../../../data/CardsData';
 

@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Profile from './Profile';
-import Navigation from './Navigation';
-import styled, {ThemeProvider} from 'styled-components'; 
+import styled from 'styled-components'; 
 
 
 class Header extends Component {
