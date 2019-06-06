@@ -13,20 +13,21 @@ class App extends Component {
   };
 
   handlePlus = () => {
+    console.log('test')
     if(!this.state.AddTodo){
     this.setState({ AddTodo: true })
     } else {
-      this.setState({ AddTodo: false })
+      this.setState({ AddTodo: false }); 
     }
   }
 
   render(){
     return (
       <div className="App">
-      <Header></Header>
-      <Navigation />
-      <BlackBackground AddTodo={this.state.AddTodo}/>
-      <Plus onClick={this.handlePlus} />
+        <Header />
+        <Navigation />
+        <BlackBackground AddTodo={this.state.AddTodo}/>
+        <Plus onClick={this.handlePlus()} />
       </div>
     );
   }
