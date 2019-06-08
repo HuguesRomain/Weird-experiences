@@ -31,9 +31,7 @@ const ProfileName = styled.p`
 `; 
 
 const ProfilePic = styled.img`
-  width: 10vh;
   height: 8vh; 
-  width: 14vw;
   border-radius: 50px;
   margin-right: 2vw;
   margin-top: 1vh;

@@ -57,8 +57,12 @@ const UiMarker = styled.div`
 
   transform: ${props => (props.active === "veryImportant" ? "translateX(72vw)" : props.active === "important" ? "translateX(35vw)" : props.active === "normal" ? "translateX(7vw)" :  "translateX(66vw)")};
 
+
   @media ${device.mobileM}{
-    transform: ${props => (props.active === "veryImportant" ? "translateX(72vw)" : props.active === "important" ? "translateX(35vw)" : props.active === "normal" ? "translateX(7vw)" :  "translateX(66vw)")};
+    transform: ${props => (props.active === "veryImportant" ? "translateX(74vw)" : props.active === "important" ? "translateX(36vw)" : props.active === "normal" ? "translateX(6vw)" :  "translateX(66vw)")};
+
+  @media ${device.mobileL}{
+  transform: ${props => (props.active === "veryImportant" ? "translateX(75vw)" : props.active === "important" ? "translateX(37vw)" : props.active === "normal" ? "translateX(5.2vw)" :  "translateX(66vw)")};  
   }
 `;
 
