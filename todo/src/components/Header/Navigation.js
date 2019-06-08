@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import styled, {ThemeProvider} from 'styled-components'; 
 import CardsVeryImportant from '../AllCards/VeryImportant/CardsVeryImportant'
 import {theme} from '../../assets/theme';
+import {device} from '../../assets/device'
 import CardsImportant from '../AllCards/Important/CardsImportant';
 import CardsNormal from '../AllCards/Normal/CardsNormal';
 
@@ -53,7 +54,12 @@ const UiMarker = styled.div`
   transition: 0.3s;
   background-color: ${props =>(props.active === "veryImportant" ? props.theme.veryImportantColor : props.active === "important" ? props.theme.importantColor : props.active === "normal" ? props.theme.normalColor : props.theme.textColor)};
   border-radius: 50px;
+
   transform: ${props => (props.active === "veryImportant" ? "translateX(72vw)" : props.active === "important" ? "translateX(35vw)" : props.active === "normal" ? "translateX(7vw)" :  "translateX(66vw)")};
+
+  @media ${device.mobileM}{
+    transform: ${props => (props.active === "veryImportant" ? "translateX(72vw)" : props.active === "important" ? "translateX(35vw)" : props.active === "normal" ? "translateX(7vw)" :  "translateX(66vw)")};
+  }
 `;
 
 const NavigationElement = styled.p`

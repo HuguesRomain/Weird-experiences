@@ -18,11 +18,6 @@ const TodoImportantCard = ({ detailsCardsImportant }) => {
 const TitleTodo = styled.p`
   color: ${props => (props.theme.textColor)};
   margin: 5%;
-
-  @media ${device.mobileM} {
-    color: ${props => (props.theme.textColor)};
-    margin: 5%;
-  }
 `;
 
 const DescriptionTodo = styled.p`
