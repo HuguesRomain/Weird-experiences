@@ -27,7 +27,7 @@ class App extends Component {
         <Header />
         <Navigation />
         <BlackBackground AddTodo={this.state.AddTodo}/>
-        <Plus onClick={this.handlePlus()} />
+        <Plus onClick={this.handlePlus} />
       </div>
     );
   }

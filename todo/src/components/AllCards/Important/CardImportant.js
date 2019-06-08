@@ -1,6 +1,8 @@
-import React from 'react'
-import styled, {ThemeProvider} from 'styled-components'; 
+import React from 'react';
+import styled, {ThemeProvider} from 'styled-components';
+import {device} from '../../../assets/device'; 
 import {theme} from '../../../assets/theme';
+
 
 const TodoImportantCard = ({ detailsCardsImportant }) => {
   return (
@@ -16,6 +18,11 @@ const TodoImportantCard = ({ detailsCardsImportant }) => {
 const TitleTodo = styled.p`
   color: ${props => (props.theme.textColor)};
   margin: 5%;
+
+  @media ${device.mobileM} {
+    color: ${props => (props.theme.textColor)};
+    margin: 5%;
+  }
 `;
 
 const DescriptionTodo = styled.p`
