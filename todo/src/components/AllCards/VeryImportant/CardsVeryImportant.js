@@ -30,6 +30,7 @@ const FeedCards = styled.ul`
 
   @media ${device.tablet}{
     display: flex;
+    flex-direction: column;
   }
 `;
 
