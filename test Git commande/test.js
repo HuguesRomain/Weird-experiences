@@ -1,6 +1,6 @@
-var test = 0 
+var HelloTest = 0 
 
-while(test < 4){
+while(HelloTest < 4){
   console.log('test')
-  test++
+  HelloTest++
 }; 
