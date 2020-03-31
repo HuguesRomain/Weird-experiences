@@ -32,17 +32,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9IC-DQ-WJ8">
-                                <rect key="frame" x="132" y="164" width="150" height="50"/>
-                                <color key="backgroundColor" red="1" green="0.21929237900024678" blue="0.0" alpha="0.5490196078431373" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="LC2-l9-OGS"/>
-                                    <constraint firstAttribute="width" constant="150" id="W3y-ar-XIg"/>
-                                </constraints>
-                                <state key="normal" title="Calculer">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="chat" translatesAutoresizingMaskIntoConstraints="NO" id="rd4-eK-bzh">
                                 <rect key="frame" x="0.0" y="309" width="414" height="587"/>
                             </imageView>
@@ -55,6 +44,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9IC-DQ-WJ8">
+                                <rect key="frame" x="132" y="249" width="150" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.21929237900024678" blue="0.0" alpha="0.5490196078431373" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="LC2-l9-OGS"/>
+                                    <constraint firstAttribute="width" constant="150" id="W3y-ar-XIg"/>
+                                </constraints>
+                                <state key="normal" title="Calculer">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
